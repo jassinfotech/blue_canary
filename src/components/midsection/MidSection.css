@@ -1,0 +1,179 @@
+.midContainer
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: fixed;
+    top: 18vh;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+
+.userSection
+{
+        /* User activity container, midsection left part. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71vh;
+    width: 68%;
+    border-radius: 25px;
+    border:  white solid 3px;
+
+    /* Background colour for friends section */
+    background: rgba( 0, 57, 166, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+}
+
+
+/*.userActivity*/
+/*{*/
+/*        !* User activity section design. Midsection, left part upper layer. *!*/
+/*    !*display: flex;*!*/
+/*    !*!*justify-content: flex-start;*!*!*/
+/*    !*!*align-items: center;*!*!*/
+/*    !*height: 68Vh;*!*/
+/*    background-color: black;*/
+/*    !*overflow: auto;*!*/
+/*    !*margin: 10px;*!*/
+/*}*/
+
+
+/* ===========================  Friends component design.   ====================================== */
+.friendsSection
+{
+        /* Friends section main container.*/
+    display: block;
+    position: fixed;
+    right: 10px;
+    margin: auto;
+    height: 71vh;
+    width: 30%;
+    border-radius: 25px;
+    border:  white solid 3px;
+
+    /* Background colour for friends section */
+    background: rgba( 0, 57, 166, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+}
+
+
+.friendsSectionTitle
+{
+        /* Friends container title design.*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 7%;
+}
+
+
+.hrLine
+{
+        /* Line above friends card property. */
+    margin: 0 10px 0 10px;
+    left: 10px;
+    height: 5px;
+    width: auto;
+    border: none;
+    background-color: white;
+    color: black;
+    display: block;
+}
+
+
+.friendsListSection
+{
+        /* Friends cards container. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    width: auto;
+    background-color: black;
+}
+
+
+.listSection
+{
+        /* Friends Card container properties */
+    display: flex;
+    justify-content: center;
+    height: 58.5vh;
+    width: 28vw;
+    margin: auto;
+    color: white;
+    overflow: auto;
+    scrollbar-color: white gainsboro ;
+    scrollbar-width: auto;
+}
+
+
+@media screen and (max-width: 1074px) {
+    /* Responsiveness for login and sign up frame. */
+    .midContainer
+    {
+        bottom: 4.5vh;
+        /*height: 42vh;*/
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Responsiveness for login and sign up frame. */
+    .midContainer{
+        /*height: 20vh;*/
+        bottom: 2vh;
+        display: flex;
+    }
+    .userSection{
+        height: 64vh;
+        width: 66%;
+    }
+    .friendsSection{
+        height: 64vh;
+    }
+    .userActivity{
+        height: 61vh;
+    }
+    .friendsListSection,
+    .listSection{
+        height: 52vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Responsiveness for login and sign up frame. */
+    .midContainer{
+        /*height: 20vh;*/
+        bottom: 1vh;
+        display: flex;
+    }
+    .userSection
+    {
+        height: 59vh;
+        width: 63%;
+    }
+    .friendsSection{
+        height: 59vh;
+
+    }
+    .userActivity{
+        height: 57vh;
+    }
+    .friendsListSection,
+    .listSection{
+        height: 47vh;
+    }
+}
+
+

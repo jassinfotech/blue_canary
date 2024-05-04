@@ -1,0 +1,143 @@
+.userActivityCont
+{       /* User activity general styling. */
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    height: 97%;
+}
+
+
+            /* ===========================      Styling for the profile bar.     ====================================*/
+.userInfoCont
+{
+        /* Profile bar styling. */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #080808;
+    padding: 10px;
+    gap: 2em;
+}
+
+
+#userInfoSpan1
+{
+        /* Profile picture and username plate styling. */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5em;
+    width: 60%;
+    gap: 1em;
+    margin-right: 20%;
+}
+
+
+#userInfoSpan1 > img
+{
+        /* Profile picture styling. */
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+#userInfoSpan2{
+        /* Log out button styling. */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 17%;
+    height: 80%;
+    padding: 5px;
+    margin-right: 5px;
+    background-color: #a2c11c;
+}
+
+
+#userInfoSpan2:hover
+{
+        /* Logout button on hover style. */
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+            /* ===========================      Styling for the posts and updates panel.     ====================================*/
+.postsSectionCont
+{
+    background-color: black;
+
+}
+
+        /* ===========================      Responsive styling for the user activity panel.     ====================================*/
+@media screen and (max-width: 768px) {
+        /* Responsiveness for the profile bar. */
+    .userInfoCont
+    {
+        padding: 10px;
+        gap: 0.5em;
+    }
+        /* Responsiveness for username and profile picture section. */
+    #userInfoSpan1
+    {
+        font-size: 1.2em;
+        width: auto;
+        margin-right: 15%;
+    }
+        /* Responsiveness for profile picture. */
+    #userInfoSpan1 > img
+    {
+        height: 22%;
+        width: 22%;
+    }
+        /* Responsiveness for logout button. */
+    #userInfoSpan2
+    {
+        font-size: 1.2em;
+        width: auto;
+        height: auto;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+        /* Responsiveness for username and profile picture section. */
+    #userInfoSpan1
+    {
+        font-size: 1.2em;
+        width: auto;
+        margin-right: 10%;
+        gap: 0.5em;
+    }
+        /* Responsiveness for profile picture. */
+    #userInfoSpan1 > img
+    {
+        height: 2em;
+        width: 2em;
+    }
+        /* Responsiveness for logout button. */
+    #userInfoSpan2
+    {
+        font-size: 1.2em;
+        width: auto;
+        height: auto;
+        margin-right: 5px;
+    }
+}
+
+
+.userActivityPosts
+{
+    overflow: auto;
+    height: 88%;
+
+}

@@ -1,0 +1,132 @@
+.postsMainContainer
+{       /* User activity general styling. */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 99%;
+    height: 98%;
+    margin: 10px auto;
+    border: solid black 1px;
+    background-color: black;
+}
+.post_ariya {
+    width: 100%;
+    margin: 10px 0px;
+}
+.postsArea img{
+    width: 100%;
+    
+}
+
+.postUserDetails
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 99%;
+    height: 12%;
+    margin: 5px;
+    background-color: #929AAB;
+}
+
+
+.postUserDetails > span > img
+{
+    width: 9%;
+    height: 9%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 12px;
+}
+
+
+.postUserDetails > span > p
+{
+    color: black;
+}
+
+
+.postUserDetails > span
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.postsArea
+{
+    display: flex;
+    width: 99%;
+    height: 63%;
+    margin: 0 5px 0 5px;
+    overflow: auto;
+    background-color: #929AAB;
+}
+
+
+.postsDownBar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 99%;
+    margin: 0 5px;
+    border-top: solid black 1px;
+    background-color: #929AAB;
+
+}
+
+
+.postsDownBar > span
+{
+    margin-left: 20px;
+}
+
+
+.postsDownBar > span:nth-of-type(1) > img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 25px;
+}
+
+
+.postsDownBar > span:nth-of-type(2) > img,
+.postsDownBar > span:last-of-type > img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    width: 25px;
+
+}
+
+
+.postsDownBar > span:hover
+{
+    color: black;
+    background-color: white;
+}
+
+.commentsSection
+{
+    display: flex;
+    width: 99%;
+    height: 15%;
+    margin: 0 5px;
+    border-top: solid black 1px;
+    background-color: #929AAB;
+}
+
+
+.commentsSection > *
+{
+    margin: 5px;
+}

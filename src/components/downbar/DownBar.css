@@ -1,0 +1,67 @@
+.downBarContainer
+{
+        /* Downbar component general style. */
+    display: flex;
+    position: fixed;
+    /*top: auto;*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100vw;
+    height: 7vh;
+    margin: auto;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+        /* Responsiveness downbar component. */
+    .downBarContainer{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+        /* Responsiveness downbar component. */
+    .downBarContainer{
+        width: auto;
+        height: 9%;
+    }
+}
+
+.leftBar,
+.middleBar,
+.rightBar
+{
+        /* Donwbar component style. */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    align-self: stretch;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px 20px 0 0;
+    background-color: black;
+}
+
+
+.leftBar:hover,
+.middleBar:hover,
+.rightBar:hover
+{
+        /* Hover behaviour for downbar buttons. */
+    color: black;
+    background-color: white;
+}
+
+
+
+

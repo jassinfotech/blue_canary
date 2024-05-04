@@ -1,0 +1,221 @@
+.topBarBody
+{
+        /* General design for top bar component. */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-content: center;
+    align-items: stretch;
+    width: 100vw;
+    position: fixed;
+    margin: auto;
+
+        /* Glassy style of the Sign Up frame. */
+        /* The code for background-color: #0039a6; */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: rgba( 0, 57, 166, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+}
+
+
+.topBarLeft
+{
+        /* Topbar left component style. Contains search bar, and buttons. */
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    align-items: stretch;
+}
+
+
+.searchBar
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    height: 45px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: black;
+}
+
+
+.search
+{
+        /* Search input style properties. */
+    display: flex;
+    border: none;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+
+}
+
+
+.search:focus
+{
+        /* Search bar focus property. */
+    outline: none;
+}
+
+
+.searchIcon
+{
+        /* Search icon style. */
+    font-size: 35px !important;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+.searchIcon:hover
+{
+        /* Search icon hover style. */
+    background-color: white;
+    color: black;
+}
+
+
+.navLinks
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: center;
+    margin: auto;
+    height: 50px;
+    width: 80%;
+}
+
+
+.navLinks > input
+{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 15px;
+    border: 0;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.navLinks > input:hover
+{
+        /* Under search bar buttons hover behaviour. */
+    background-color: white;
+    color: black;
+}
+
+
+.topBarRight
+{
+        /* Topbar right component style. Contains Webapp logo and name. */
+    display: inline-flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font: 35px bold;
+}
+.navLinks a {
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 28px;
+    text-decoration: none;
+    color: #fff;
+}
+.navLinks a:hover {
+    background: #fff;
+    color: #0f0e0e;
+}
+
+.topBarRight > div > img
+{
+    /* Webapp logo style. */
+    width: 65px;
+    height: 65px;
+}
+
+
+    /* Responsive property for all elements. */
+@media (max-width: 768px) {
+        /* Responsiveness for top bar. */
+    .topBarBody {
+        flex-direction: column-reverse;
+        align-items: center;
+        position: fixed;
+    }
+        /* Responsiveness for search bar. */
+    .searchBar {
+        width: 95%;
+    }
+        /* Responsiveness for search input. */
+    .search{
+        width: 70%;
+    }
+        /* Under search bar buttons. */
+    .navLinks > input{
+        width: 50%;
+        margin: 5px;
+        padding: 5px;
+    }
+        /* Responsiveness for the Topbar right. */
+    .topBarRight {
+        gap: 10px;
+    }
+        /* Responsive style for Webapp logo. */
+    .topBarRight > div > img{
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 480px) {
+        /* Responsiveness for top bar. */
+    .topBarBody {
+        flex-direction: column-reverse;
+        align-items: center;
+        position: fixed;
+    }
+        /* Responsiveness for search bar. */
+    .searchBar {
+        width: 95%;
+    }
+        /* Responsiveness for search input. */
+    .search{
+        width: 70%;
+    }
+        /* Under search bar buttons. */
+    .navLinks > input{
+        width: 50%;
+        margin: 5px;
+        padding: 5px;
+    }
+        /* Responsiveness for the Topbar right. */
+    .topBarRight {
+        gap: 10px;
+    }
+        /* Responsive style for Webapp logo. */
+    .topBarRight > div > img{
+        width: 75px;
+        height: 75px;
+    }
+}

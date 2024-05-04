@@ -1,0 +1,39 @@
+.friendsList
+{
+    /* Friends cards inner design. */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #929AAB;
+    color: black;
+    height: 10%;
+    margin: 5px;
+    padding: 5px;
+    width: 25vw;
+    gap: 10px;
+}
+
+.friendsList:hover
+{
+    color: white;
+    background-color: #2185D5;
+    cursor: pointer;
+}
+
+.friendsImage
+{
+    height: 65px;
+    width: 62px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 5px;
+}
+
+.friendsName
+{
+    font-size: 24px;
+
+}
